@@ -12,19 +12,15 @@ body{
     display: grid;
     grid-template-columns: 400px 1fr;
     grid-template-rows: 1fr 0.15fr 0.1fr;
-    /* grid-template-areas: 
-    "header main"
-    "footer footer"; */
 }
 
 
 h1, h2, h3, h4, h5, h6{
     color: #fdce70;
-    /* padding-bottom: 5%;
-    padding-left: 5%; */
+    text-align: center;
 }
 li, p{
-    color: #FFDE9C
+    color: #FFDE9C;
 }
 header{
     position: fixed;
@@ -41,26 +37,19 @@ header{
     line-height: 1.6em;
     z-index: 1;
     clip-path: ellipse(90% 100% at 10% 53%);
-    /* grid-area: header;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3; */
 }
 nav{
     display: none;
 }
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 strong{
     text-align: right;
 }
 .grid{
-    /* position: absolute;
-    left: 22%;
-    width: 80%;
-    height: 200%; */
     padding: 0;
     margin: 0;
     display: grid;
@@ -69,25 +58,25 @@ strong{
     gap: 2em;
     grid-template-areas:
     " . . . . . . . . . . . . . . . "
-    " . . . . . . . . . . language_programmation language_programmation language_programmation language_programmation ."
-    " .  competence competence competence competence competence competence competence competence . language_programmation language_programmation language_programmation language_programmation ."
-    " .  competence competence competence competence competence competence competence competence . language_programmation language_programmation language_programmation language_programmation ."
-    " .  competence competence competence competence competence competence competence competence . language_programmation language_programmation language_programmation language_programmation ."
-    " .  competence competence competence competence competence competence competence competence . language_programmation language_programmation language_programmation language_programmation ."
+    " . . . . . . . . . language_programmation language_programmation language_programmation language_programmation language_programmation ."
+    " .  competence competence competence competence competence competence competence competence language_programmation language_programmation language_programmation language_programmation language_programmation ."
+    " .  competence competence competence competence competence competence competence competence language_programmation language_programmation language_programmation language_programmation language_programmation ."
+    " .  competence competence competence competence competence competence competence competence language_programmation language_programmation language_programmation language_programmation language_programmation ."
+    " .  competence competence competence competence competence competence competence competence language_programmation language_programmation language_programmation language_programmation language_programmation ."
     " . . . . . . . . . . . . . . . "
-    ". . . formation formation formation formation formation formation formation formation formation . . ."
-    ". . . formation formation formation formation formation formation formation formation formation . . ."
-    ". . . formation formation formation formation formation formation formation formation formation . . ."
-    ". . . formation formation formation formation formation formation formation formation formation . . ."
-    ". . . formation formation formation formation formation formation formation formation formation . . ."
-    ". . . formation formation formation formation formation formation formation formation formation . . ."
+    ". . . formation formation formation formation formation formation formation formation formation formation . ."
+    ". . . formation formation formation formation formation formation formation formation formation formation . ."
+    ". . . formation formation formation formation formation formation formation formation formation formation . ."
+    ". . . formation formation formation formation formation formation formation formation formation formation . ."
+    ". . . formation formation formation formation formation formation formation formation formation formation . ."
+    ". . . formation formation formation formation formation formation formation formation formation formation . ."
     " . . . . . . . . . . . . . . . "
-    " . . . . . . . . experiences experiences experiences experiences experiences experiences ."
-    " . . . linguistique linguistique linguistique linguistique . experiences experiences experiences experiences experiences experiences ."
-    " . . . linguistique linguistique linguistique linguistique . experiences experiences experiences experiences experiences experiences ."
-    " . . . . . . . . experiences experiences experiences experiences experiences experiences ."
-    " . . qualites qualites qualites . . . experiences experiences experiences experiences experiences experiences ."
-    " . . qualites qualites qualites . . . experiences experiences experiences experiences experiences experiences ."
+    " . . . . . . . experiences experiences experiences experiences experiences experiences experiences ."
+    " . linguistique linguistique linguistique linguistique linguistique . experiences experiences experiences experiences experiences experiences experiences ."
+    " . linguistique linguistique linguistique linguistique linguistique . experiences experiences experiences experiences experiences experiences experiences ."
+    " . . . . . . . experiences experiences experiences experiences experiences experiences experiences ."
+    " . . qualites qualites qualites qualites . experiences experiences experiences experiences experiences experiences experiences ."
+    " . . qualites qualites qualites qualites . experiences experiences experiences experiences experiences experiences experiences ."
     " . . . . . . . . . . . . . . . ";
 }
 #linguistique{
@@ -112,7 +101,8 @@ strong{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center ;
+    justify-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
     width: auto;
     height: max-content;
@@ -139,17 +129,12 @@ section{
     grid-row-end: 2;
 }
 footer{
-    /* grid-area: footer; */
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    /* display: block;
-    position:absolute; */
     z-index: -1;
-    /* bottom: -170%; */
-    /* height: 60%; */
-    
+    padding-left: 375px;
     clip-path: ellipse(150% 130% at 14% 150%);
     background-color: #381407; ;
 }
@@ -207,12 +192,10 @@ article{
 }
 .formulaireContact{
     display: flex;
-    height: 300px;
+    height: 400px;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 500px;
     padding: 15px;
     font: 1.2em "Fira Sans", serif;
@@ -239,4 +222,10 @@ form input:valid:focus{
     border-radius: 5px;
     margin: 5px;
     
+}
+.face.lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
