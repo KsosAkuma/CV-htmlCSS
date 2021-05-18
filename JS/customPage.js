@@ -26,7 +26,7 @@ pageAccueil = function(){
             break;
 
         default :
-            quelStyle.href = "/CSS/style1.1.css";
+            quelStyle.href = "/CSS/style.css";
             btnStyle.textContent =" Mode : Flex";
             interrupteur = 0;
             break;
