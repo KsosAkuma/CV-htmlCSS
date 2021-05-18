@@ -5,7 +5,7 @@ const btnStyle = document.getElementById('btnStyleCSS');
 
 let interrupteur = 0;
 
-pageAccueil = function(){
+ function pageAccueil(){
     switch (interrupteur){
         case 0 : 
             quelStyle.href = "CSS/style2.css";
