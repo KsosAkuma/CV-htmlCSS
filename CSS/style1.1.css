@@ -234,6 +234,9 @@ form input:valid:focus{
     outline: white solid 0px;
     
 }
+textarea{
+    resize: none;
+}
 .face.lista{
     display: flex;
     flex-direction: column;
